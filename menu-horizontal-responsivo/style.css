@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;600;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Kanit", sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+body {
+  background: #ccc;
+}
+.container {
+  width: 100%;
+  background: gray;
+}
+.logo {
+  float: left;
+  margin-left: 10px;
+}
+.logo img {
+  width: 2.5em;
+  cursor: pointer;
+}
+.container ul {
+  list-style: none;
+  float: right;
+  margin-right: 5px;
+}
+.container li {
+  float: left;
+  padding: 10px;
+}
+.container li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+.container li a:hover {
+  color: #fff;
+  background: black;
+}
+.container li a.login {
+  background-color: black;
+  border-radius: 10px;
+  padding: 7px 30px 7px 30px;
+  font-variant: small-caps;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.container li a.login:hover {
+  background: rgb(56, 53, 53);
+}
+.conteudo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conteudo img{
+  width: 50vw;
+  margin-top: -50px;
+}
+/* RESPONSIVIDADE */
+@media screen and (max-width: 552px) {
+  .logo {
+    float: none;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .logo img {
+    width: 4em;
+    }
+  .container ul {
+    list-style: none;
+    float: none;
+    margin-right: 5px;
+  }
+  .container li {
+    float: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  .conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .conteudo img{
+    width: 70vw;
+    margin-top: -20px;
+  }
+}
